@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Test.Domain
 {
-    public interface IServiceBus
+    public class CreatedCommandAudit : IEvent
     {
-        void StartMessage<T>(T value) where T : IMesage;
-        void HandleEvent<T>(T value) where T : IEvent;
+        public string Action { get;  set; }
+        public DateTime Date { get;  set; }
     }
 }

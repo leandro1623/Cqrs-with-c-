@@ -38,8 +38,9 @@ namespace Test.Services
             //qweries
             Kernel.Bind<IQweryService>().To<QweryService>();
             Types.Add(typeof(IQweryService));
-
-
+            //audit
+            Kernel.Bind<IAuditCommandService>().To<AuditCommandService>();
+            Types.Add(typeof(IAuditCommandService));
         }
 
         public object Get(Type value)

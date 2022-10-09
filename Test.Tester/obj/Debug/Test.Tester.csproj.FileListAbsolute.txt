@@ -28,3 +28,4 @@ C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Tester\bin\Debug\es\Micro
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Tester\bin\Debug\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Tester\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Tester\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Tester\bin\Debug\Test.Domain.dll.config

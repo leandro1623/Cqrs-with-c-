@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBase\AuditModel.cs" />
     <Compile Include="DataBase\Context.cs" />
     <Compile Include="DataBase\PersonModel.cs" />
     <Compile Include="DataBase\PersonProductModel.cs" />

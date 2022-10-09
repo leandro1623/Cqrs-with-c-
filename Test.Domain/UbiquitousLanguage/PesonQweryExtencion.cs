@@ -14,7 +14,6 @@ namespace Test.Domain
         public static IQueryable<Person> IncludeProducts(this IQueryable<Person> qwery)
         {
             return qwery.Include(p => p.Products);
-
         }
 
 

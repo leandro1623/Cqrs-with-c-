@@ -3,10 +3,10 @@ C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\bin\Debug\Test.Dom
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\obj\Debug\Test.Domain.csproj.CoreCompileInputs.cache
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\obj\Debug\Test.Domain.dll
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\obj\Debug\Test.Domain.pdb
-C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\obj\Debug\Test.Domain.csproj.AssemblyReference.cache
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\bin\Debug\Test.Domain.dll.config
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\bin\Debug\EntityFramework.dll
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\bin\Debug\EntityFramework.xml
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\obj\Debug\Test.Domain.csproj.CopyComplete
+C:\Users\acerv\OneDrive\Desktop\Tests.Application\Test.Domain\obj\Debug\Test.Domain.csproj.AssemblyReference.cache

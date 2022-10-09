@@ -15,6 +15,7 @@ namespace Test.Domain
 
         //product
         public List<PersonProduct> Products { get; protected set; }
+        
 
         //constructor to entity
         protected Person() { }

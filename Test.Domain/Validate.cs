@@ -23,7 +23,16 @@ namespace Test.Domain
                 throw new InvalidOperationException(msg);
             }
         }
-    }
 
-   
+
+        public static void NotNullDate(DateTime date, string msg)
+        {
+            if (date == DateTime.MinValue)
+                throw new InvalidOperationException(msg);
+        }
+
+
+
+
+    }   
 }

@@ -40,5 +40,15 @@ namespace Test.Services
                 serv.Star(value);   
             }
         }
+
+        public void HandleEvent<T>(T value) where T : IEvent
+        {
+            List<ICanHandleEvent<T>> Events = GetAssignablesServices<ICanHandleEvent<T>>();
+
+            foreach(ICanHandleEvent<T> handleEvent in Events)
+            {
+                handleEvent.Handle(value);
+            }
+        }
     }
 }

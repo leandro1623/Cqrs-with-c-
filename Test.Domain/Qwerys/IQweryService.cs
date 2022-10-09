@@ -8,8 +8,8 @@ namespace Test.Domain
 {
     public interface IQweryService
     {
-        List<Person> People(bool IncludeProducts = false);
-        List<T> Entities<T>() where T : Aggregate;
+        IQueryable<Person> People(bool IncludeProducts = false);
+        IQueryable<T> Entities<T>() where T : Aggregate;
     }
 
     public class QweryService : IQweryService
@@ -21,14 +21,15 @@ namespace Test.Domain
             this.Context = context;
         }
 
-        public List<T> Entities<T>() where T : Aggregate
+        public IQueryable<T> Entities<T>() where T : Aggregate
         {
-            return Context.GenericEntity<T>().ToList();
+            return Context.GenericEntity<T>();
         }
 
-        public List<Person> People(bool IncludeProducts = false)
+        public IQueryable<Person> People(bool IncludeProducts = false)
         {
-                return this.Context.People(false, IncludeProducts).ToList();
+            return this.Context.People(false, IncludeProducts);
+                     
         }
     }
 }

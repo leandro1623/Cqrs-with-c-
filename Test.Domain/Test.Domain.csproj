@@ -52,7 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aggregate.cs" />
+    <Compile Include="Audit\AuditEntry.cs" />
+    <Compile Include="Comands\IAuditCommandService.cs" />
     <Compile Include="Comands\IPersonCommandService.cs" />
+    <Compile Include="CreatedCommandAudit.cs" />
     <Compile Include="CreatedCommnadPerson.cs" />
     <Compile Include="PersonProduct.cs" />
     <Compile Include="Person\Person.cs" />

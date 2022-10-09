@@ -14,10 +14,12 @@ namespace Test.Domain
     public class PersonCommandService : IPersonCommandService
     {
         private IContext Context;
+        private IServiceBus Svb;
 
-        public PersonCommandService(IContext context)
+        public PersonCommandService(IContext context, IServiceBus svb)
         {
             this.Context = context;
+            this.Svb = svb;
         }
 
 
@@ -28,6 +30,13 @@ namespace Test.Domain
 
             this.Context._Add(person);
             this.Context._SaveChanges();
+
+            //event
+            CreatedCommandAudit cmdAudit = new CreatedCommandAudit() { Action = string.Format("Person with id = {0} created",person.Id), Date = DateTime.Now };
+
+            this.Svb.HandleEvent(cmdAudit);
+            
+            
         }
     }
 

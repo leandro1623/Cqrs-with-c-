@@ -13,7 +13,10 @@ namespace Test.Services
     {
         public Context() : base("StringC")
         {
-            Database.SetInitializer<Context>(null);
+            //Database.SetInitializer<Context>(null);
+            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.ProxyCreationEnabled = false;
+
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -21,6 +24,7 @@ namespace Test.Services
             modelBuilder.Configurations.Add(new PersonModel());
             modelBuilder.Configurations.Add(new ProductModel());
             modelBuilder.Configurations.Add(new PersonProductModel());
+            modelBuilder.Configurations.Add(new AuditModel());
         }
 
         public void Add<T>(T value) where T: Aggregate

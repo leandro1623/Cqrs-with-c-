@@ -21,15 +21,24 @@ namespace Tests.Application
             //body
             IQweryService qwery = Injector.Get<IQweryService>();
 
+            List<Person> people = new List<Person>();
 
-            List<Person> people = qwery.People(true);
+            
+            people = qwery.People(true).ToList();
+            
+
+            Product name =  people[1].Products[0].Product;
+
+            //List<PersonProduct> personProducts = qwery.Entities<PersonProduct>().IncludeProduct().ToList();
+
+            //WriteToDb();
 
             //Show on display
 
-            Console.ReadKey();
+            Console.WriteLine(name.ToString());
         }
 
-        private void WriteToDb()
+        private static void WriteToDb()
         {
 
             IServiceBus serviceBus = Injector.Get<IServiceBus>();
